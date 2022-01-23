@@ -14,12 +14,11 @@ import os
 # from decouple import config
 
 
-OWN_EMAIL = "garv@gmail.com"#config("OWN_EMAIL")#"testmailop001@gmail.com"
-OWN_PASSWORD = "jatjhtjh"#config("OWN_PASSWORD")#"hNTyjm70(1"
-
+OWN_EMAIL = os.environ.get('OWN_EMAIL')#config('OWN_EMAIL').....decouple
+OWN_PASSWORD = os.environ.get('OWN_PASSWORD')
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')#'8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 ckeditor = CKEditor(app)
 Bootstrap(app)
 gravatar = Gravatar(app, size=100, rating='g', default='retro', force_default=False, force_lower=False, use_ssl=False, base_url=None)
