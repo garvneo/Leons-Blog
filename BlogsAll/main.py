@@ -10,11 +10,11 @@ from flask_login import UserMixin, login_user, LoginManager, login_required, cur
 from forms import LoginForm, RegisterForm, CreatePostForm, CommentForm
 from flask_gravatar import Gravatar
 import smtplib
-from decouple import config
+# from decouple import config
 
 
-OWN_EMAIL = config("OWN_EMAIL")#"testmailop001@gmail.com"
-OWN_PASSWORD = config("OWN_PASSWORD")#"hNTyjm70(1"
+OWN_EMAIL = "garv@gmail.com"#config("OWN_EMAIL")#"testmailop001@gmail.com"
+OWN_PASSWORD = "jatjhtjh"#config("OWN_PASSWORD")#"hNTyjm70(1"
 
 
 app = Flask(__name__)
