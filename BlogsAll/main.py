@@ -13,7 +13,6 @@ import smtplib
 import os
 # from decouple import config
 
-
 OWN_EMAIL = os.environ.get('OWN_EMAIL')#config('OWN_EMAIL').....decouple
 OWN_PASSWORD = os.environ.get('OWN_PASSWORD')
 
@@ -229,6 +228,7 @@ def contact():
     if request.method == "POST":
         # data = request.form
         data = request.form
+        print(OWN_EMAIL, OWN_PASSWORD )
         send_email(data["name"], data["email"], data["phone"], data["message"])
         return render_template("contact.html", msg_sent=True, current_user= current_user)
     return render_template("contact.html", msg_sent=False)
