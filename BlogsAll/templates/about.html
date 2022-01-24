@@ -31,24 +31,25 @@
 			<div class="skills">
 				<h2>My Skills.</h2>
 				<div class="skill-row">
-				  <img class="mountain-img" src="images/python.png" alt="">
+				  <img class="mountain-img" src="{{ url_for('static', filename='img/python.png') }}" alt="">
 				  <h3>Python</h3>
-				  <p>I am an <strong>Infosys Certified Python Programmer and Associate </strong> and is very well versed with it and its related frameworks.</p>
+				  <p>I am an <strong>Infosys Certified Python Programmer and Associate </strong>, and is very well versed with it and its related frameworks.</p>
 				</div>
 				<div class="skill-row">
-				  <img class="computer-img" src="images/content.png" alt="">
+				  <img class="computer-img" src="{{ url_for('static', filename='img/content.png') }}" alt="">
 				  <h3>Other Skills</h3>
 				  <p>My other skills and certifications all are: <br> <strong>Selenium, Numpy, Pandas, Matplotlib, HTML, CSS, Turtle, TKinter, Flask, SQL, RDBMS</strong> etc. Check Resume and LinkedIn to know more.</p>
 				</div>
 				<br>
-				<img src="images/hackerrank.jpg"  style="width:800px; height:400px; margin-bottom:10px;">
+				<h3>Some of my Certifications and Badges: </h3>
+				<img src="{{ url_for('static', filename='img/hackerrank.jpg') }}"  style="width:800px; height:400px; margin-bottom:10px;">
 				<br>
-				<img src="images/certifications.jpg" style="width:800px; height:400px; margin:10px 10px;">
+				<img src="{{ url_for('static', filename='img/certifications.jpg') }}" style="width:800px; height:400px; margin:10px 10px;">
 			</div>
 			<hr>
 			<div class="contact-me">
 				<h2>Get In Touch</h2>
-				<!--<h3>Lorem ipsum dolor sit amet, non elit.</h3> -->
+
 				<p id="contact-para" >More updates on me are coming soon on this <a class="website" href="https://gauravchandsingh.w3spaces.com/">Website</a>. Here I will be giving information about my projects and other stuffs.
 				<br><br> Till then if Feel to connect! then Connect with me on the below platforms. <br>
 				</p>
