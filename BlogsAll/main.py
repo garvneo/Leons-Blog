@@ -239,7 +239,8 @@ def send_email(name, email, phone, message):
     with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
         connection.starttls()
         connection.login(OWN_EMAIL, OWN_PASSWORD)
-        connection.sendmail(OWN_EMAIL, OWN_EMAIL, email_message)
+        response = connection.sendmail(OWN_EMAIL, OWN_EMAIL, email_message)
+        print(response)
 
 if __name__ == "__main__":
     app.run(debug=True)
